@@ -1,0 +1,36 @@
+{
+  "name": "registro-taller-gsa-2026",
+  "version": "1.0.0",
+  "description": "Sistema de registro y recordatorios automáticos para la Sesión Google Gemini Multidisciplinaria - Estudiantes Embajadores de Google 2026 (UPTEX)",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test:simulate": "node scripts/test-simulation.js",
+    "railway:vars": "node scripts/sync-railway-vars.js",
+    "railway:deploy": "node scripts/sync-railway-vars.js && railway up"
+  },
+  "keywords": [
+    "google-student-ambassadors",
+    "gemini",
+    "uptex",
+    "google-sheets",
+    "workshop-registration"
+  ],
+  "author": "Oswaldo Lucas Pablo - Estudiante Embajador de Google 2026",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-rate-limit": "^7.4.1",
+    "googleapis": "^144.0.0",
+    "helmet": "^8.0.0",
+    "luxon": "^3.5.0",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.9.16"
+  }
+}

@@ -1,0 +1,21 @@
+node_modules/
+data/
+.git/
+.env
+.env.*
+!.env.example
+service-account.json
+*-credentials.json
+npm-debug.log*
+
+# Ignorar imágenes de assets que no se usan en la web para un despliegue rápido y ligero
+assets/*
+!assets/UPTEX.png
+!assets/material-difusion.png
+!assets/Gemini_Generated_Image_297rci297rci297r.png
+!assets/Gemini_Generated_Image_9rooq29rooq29roo.png
+!assets/Gemini_Generated_Image_ (7).png
+!assets/Gemini_Generated_Image_ (8).png
+!assets/Gemini_Generated_Image_ (75).png
+!assets/Gemini_Generated_Image_685g9u685g9u685g.png
+!assets/Gemini_Generated_Image_he49wkhe49wkhe49 (1).png
